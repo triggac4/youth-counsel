@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:youth_counsellor/assets/fontAsset.dart';
+import 'package:youth_counsellor/generalWidget/textField.dart';
+import 'package:youth_counsellor/screens/SignUpScreen/signUpScreen.dart';
+import 'package:youth_counsellor/screens/SignUpScreen/signUpWidgets/signUpTextFields.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,23 +11,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
-      home: Name(),
+      home: SignUpScreen(),
+      theme:
+          ThemeData(primarySwatch: Colors.lightBlue, accentColor: Colors.amber),
     );
   }
 }
 
-class Name extends StatefulWidget {
-  Name({Key key}) : super(key: key);
 
-  @override
-  _NameState createState() => _NameState();
-}
 
-class _NameState extends State<Name> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Scaffold(),
-    );
-  }
-}
