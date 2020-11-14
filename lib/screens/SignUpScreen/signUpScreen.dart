@@ -4,7 +4,6 @@ import 'package:youth_counsellor/screens/SignUpScreen/signUpWidgets/signUpTextFi
 
 class SignUpScreen extends StatelessWidget {
   SignUpScreen({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     Color backgroungColor = Theme.of(context).primaryColor;
