@@ -102,7 +102,7 @@ class _SignUpTextFieldsState extends State<SignUpTextFields> with validator {
                 mainPassword: _password,
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Container(
                 width: 200,
@@ -119,7 +119,7 @@ class _SignUpTextFieldsState extends State<SignUpTextFields> with validator {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 2,
               ),
               Text.rich(TextSpan(children: <TextSpan>[
                 TextSpan(
@@ -130,7 +130,7 @@ class _SignUpTextFieldsState extends State<SignUpTextFields> with validator {
                         .copyWith(color: Theme.of(context).primaryColor))
               ])),
               SizedBox(
-                height: 100,
+                height: 40,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
