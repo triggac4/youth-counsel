@@ -19,25 +19,27 @@ class SignUpScreen extends StatelessWidget {
     return Column(mainAxisAlignment: MainAxisAlignment.end, children: [
       SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.symmetric(horizontal: 35, vertical: 15),
           alignment: Alignment.centerLeft,
-          height: deviceHeight * 0.2,
+          height: deviceHeight * 0.25,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('welcome', style: FontAsset.title),
+              Text('Welcome', style: FontAsset.welcomeTitle),
               Text(
                 'Sign Up',
-                style: FontAsset.unknownFont
-                    .copyWith(fontSize: 40, color: Colors.white),
+                style: FontAsset.unknownFont.copyWith(
+                    fontSize: 40,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
               ),
             ],
           ),
         ),
       ),
       SignUpTextFields(
-        deviceHeight - (deviceHeight * 0.2),
+        deviceHeight - (deviceHeight * 0.25),
       ),
     ]);
   }
