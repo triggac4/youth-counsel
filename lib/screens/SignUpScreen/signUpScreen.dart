@@ -22,19 +22,21 @@ class SignUpScreen extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 35, vertical: 15),
           alignment: Alignment.centerLeft,
           height: deviceHeight * 0.25,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('Welcome', style: FontAsset.welcomeTitle),
-              Text(
-                'Sign Up',
-                style: FontAsset.unknownFont.copyWith(
-                    fontSize: 40,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
-              ),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Welcome', style: FontAsset.welcomeTitle),
+                Text(
+                  'Sign Up',
+                  style: FontAsset.unknownFont.copyWith(
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ),
         ),
       ),
